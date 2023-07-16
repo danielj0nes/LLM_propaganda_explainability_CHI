@@ -1,0 +1,28 @@
+{
+
+    "manifest_version": 2,
+    "name": "ClarifAI",
+    "version": "1.0",
+    "description": "Automated propaganda detection in real-time",
+    "icons": {
+      "48": "icons/clarifAI_48x48.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["clarifai.js"]
+      }
+    ],
+    "browser_action": {
+      "default_icon": {
+        "16": "icons/clarifAI_16x16.png",
+        "32": "icons/clarifAI_32x32.png"
+      },
+      "default_title": "ClarifAI",
+      "default_popup": "/main.html"
+    },
+    "permissions": [
+        "storage"
+    ]
+
+  }
