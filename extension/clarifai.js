@@ -1,4 +1,4 @@
-// Check for when the 'detect propaganda' button is clicked
+// Check for when the 'Get selected text' button is clicked
 browser.runtime.onMessage.addListener(function(message, sender, sendResponse) {
     if (message.action === 'getSelectedText') {
         const selectedText = window.getSelection().toString();
